@@ -2,6 +2,7 @@
 import HeaderLink from './HeaderLink.astro';
 import { HOMEPAGE_URL, SITE_TITLE } from '../consts';
 import { IoLogoGithub } from 'react-icons/io5/index.js'
+import FootprintIcon from './icons/footprint'
 ---
 
 <header class="fixed w-full p-2 z-20 backdrop-blur-md">
@@ -9,6 +10,7 @@ import { IoLogoGithub } from 'react-icons/io5/index.js'
 <nav class="flex items-center gap-3 text-base">
       <a href="/" class="group">
         <h2 class="font-semibold tracking-tighter p-2 font-mplus text-lg">
+          <FootprintIcon />
           Minami EED
         </h2>
       </a>
