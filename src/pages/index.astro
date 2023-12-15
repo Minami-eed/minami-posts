@@ -1,27 +1,38 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import Body from '../components/Body.astro';
-import Content from '../components/Content.astro';
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import Body from '../components/Body.astro'
+import Content from '../components/Content.astro'
 ---
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<Body>
-		<Header title={SITE_TITLE} />
-		<main class="pt-[56px]">
-			<h1 class="font-mplus text-center">Historia de Amor</h1>
-			<Content>
-				<p class="mb-8 indent-4">
-					Content
-				</p>
-			</Content>
-		</main>
-		<Footer />
-	</Body>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <Body>
+    <Header title={SITE_TITLE} />
+    <main class="pt-[56px]">
+      <h1 class="font-mplus text-center">Mi primer gran amor</h1>
+      <Content>
+        <p class="mb-8 indent-4">
+          Esa mujer tan pequeña como una flor, como un petalo a la deriva en el
+          viento. Me atrae a ella como la fuerza que ejerce la tierra y de
+          pronto caí hacia ella sin razón, tal como lo hizo la manzana de
+          Newton, como un latido... como un fuerte latido. Mi corazón llegó del
+          cielo a la tierra en un vertiginoso movimiento.
+          <a
+            class="inline-flex items-center gap-1 indent-1 text-orange-500"
+            href="https://www.instagram.com/sushi.trash_ss/"
+            target="_blank"
+          >
+            &hearts; Mi princesita hermosa &hearts;</a
+          >
+        </p>
+      </Content>
+    </main>
+    <Footer />
+  </Body>
 </html>
